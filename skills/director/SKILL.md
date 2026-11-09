@@ -18,7 +18,7 @@ Turns the reference's grammar into a new reel about the person's own topic. Read
    - **world, then proof**: a playful scene, then a real card (numbers, UI, the actual output) over it;
    - the **host steps out** when a lineup or demo needs the full frame.
 5. **List assets.** For every shot: what exists already in `brand.md`, and exactly what must be made (each pose, prop, recording). List separately anything that must be real before posting: links, the DM automation behind the keyword.
-6. **Check** with the list in the template, including the transcript overlap rule in `../../reference/not-a-copy.md`. Fix and re-check until every box is ticked.
+6. **Check** with the list in the template, including the transcript overlap rule in `../../reference/not-a-copy.md` and the clear area in `../../reference/safe-zones.md`. Fix and re-check until every box is ticked.
 7. **Stop.** Show the script and the shot table, and wait for the person's go. Notes change only the shots they name.
 
 Done when every box in Checks is ticked and the person has said go.
