@@ -1,6 +1,6 @@
 # Safe zones for a 1080x1920 reel
 
-The app draws over the video. Anything that must be read or seen goes inside the clear area.
+The app draws its UI over the video. The rule: **the picture fills the whole frame, the words stay clear of the UI.**
 
 | Zone | Pixels on 1080x1920 | What covers it |
 |---|---|---|
@@ -9,8 +9,10 @@ The app draws over the video. Anything that must be read or seen goes inside the
 | Right side, bottom 40% | x 960 to 1080, y 1150 to 1920 | like, comment, share, save rail |
 | Sides 6% | 65 px each side | edge crop on some phones |
 
-**Clear area:** x 65 to 1015, y 270 to 1250. Every word, the host's face and mouth, and every proof card sit inside it. The covered zones carry only ground, texture or decoration.
+**Clear area: x 65 to 1015, y 270 to 1250.** Every word sits here: caption chips, card text, numbers, the call to action. So does anything whose detail must be read, like a UI screenshot's key line or a host's mouth while it lip-syncs.
 
-**Cover frame:** the profile grid crops every reel to 3:4 from the centre (y 240 to 1680), so the first frame's hook sits inside the clear area too.
+**Full bleed everywhere else.** Grounds, worlds, characters, props and footage run edge to edge, through the covered zones. A character standing in the bottom zone or a scene rising into the top zone is right; shrinking the picture into the clear area leaves dead bands and looks squashed.
+
+**Cover frame:** the profile grid crops every reel to 3:4 from the centre (y 240 to 1680), so the first frame's hook sits inside that crop.
 
 These are Meta's published Reels percentages converted to pixels. TikTok and YouTube Shorts overlays are similar; check the platform when the reel is made for one of them.
