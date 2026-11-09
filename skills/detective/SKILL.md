@@ -20,14 +20,18 @@ Work in `remix/<slug>/` (layout: `../../reference/project-layout.md`). For each 
    npx hyperframes measure events "$V" --map --out "$B/events" > "$B/events.json"
    npx hyperframes measure frames "$V" --every 0.5 --out "$B/sheets" > "$B/sheets.json"
    npx hyperframes measure frames "$V" --events --out "$B/strips" > "$B/strips.json"
-   npx hyperframes transcribe "$V" --dir "$B" --model small.en --json
+   npx hyperframes transcribe "$V" --dir "$B" --model small.en --json > "$B/transcribe.log"
    ```
 
-   Make `$B` first. For speech that is not English, use `--model small --language <code>`. `cuts.json` gives every hard cut, `events.json` adds appears, holds and sound onsets, `sheets/` is one frame every 0.5 s with the time printed on each, `strips/` is consecutive frames around each burst of motion, and `transcript.json` is every spoken word with its time.
-3. **Look.** Open every sheet in `sheets/`, then every strip in `strips/`. Read them all: the grammar lives in the details (what pops in first, which way a character faces, what the caption says at that exact moment).
-4. **Write `breakdown/<id>.md`** with the sections below.
+   Make `$B` first. For speech that is not English, use `--model small --language <code>`. `cuts.json` lists cut candidates, `events.json` adds appears, holds and sound onsets, `sheets/` is one frame every 0.5 s with the time printed on each, `strips/` is consecutive frames around each burst of motion, and `transcript.json` is every spoken word with its time.
 
-Done when every shot in `cuts.json` has a row in the shot table, every sheet and strip has been opened, and each grammar question has an answer backed by a timestamp.
+   If `probe.json` notes the video is longer than 60 s, still measure the whole file, but read and write it up in sections of at most 60 s, split at a cut.
+3. **Look, writing as you go.** Open the sheets two or three at a time, in order, and add their shots to the shot table in `breakdown/<id>.md` before opening the next batch: older images drop out of context in a long session, and notes on disk do not. Then pick the strips that show the moves worth rebuilding (the hook, every entrance or swap that repeats, the call to action), at most 12, open them in small batches, and write each one's motion note before moving on.
+4. **Confirm the cuts.** `cuts.json` and `events.json` can disagree: a caption change or the start of a wipe can register as a cut. Check each candidate against the sheet frames on either side, and keep only real cuts in the shot table.
+5. **Check the words.** Whisper mishears names and keywords, and the call to action is where that matters most. Compare the transcript with the on-screen captions in the sheets; where they differ, the caption wins, and note the correction.
+6. **Finish `breakdown/<id>.md`** with the sections below.
+
+Done when every candidate in `cuts.json` is either a shot row or noted as not a cut with its reason, every sheet has been read and its shots written down, every strip you chose has a motion note, and each grammar question has an answer backed by a timestamp.
 
 ## The breakdown
 
@@ -42,7 +46,7 @@ Done when every shot in `cuts.json` has a row in the shot table, every sheet and
 - **Prop arc:** is there an object that carries the story across scenes and pays off at the end?
 - **Running example:** is one concrete case (a product, a fake company, a person) used throughout?
 - **World and proof:** does it alternate illustrated or playful scenes with real UI, numbers or results?
-- **Host:** when is the person on screen, when do they drop out, and why at those moments?
+- **Host:** who carries the reel (a person, an avatar or character, or no one), when they are on screen, when they drop out, and why at those moments.
 - **Motion:** the recurring moves, from the strips: entrances, punch-ins, swaps, multiplications, typing. Give frame counts.
 - **Packaging:** caption style (position, case, font feel, chip or plain), how captions enter, how many words per chip.
 - **Sound:** VO, music, effects. You cannot hear: work from the transcript and the onsets in `events.json` (a cluster of onsets on caption entrances suggests pops), and label every sound claim as inferred.

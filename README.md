@@ -2,7 +2,7 @@
 
 5 Claude skills that turn reels you like into one in your brand: find, break down, rebrand, storyboard, build.
 
-Paste the links of reels you love. Claude ranks them, breaks down how the best one works frame by frame, swaps their look for yours, writes your storyboard, then builds and renders the video in code. Inspired by them, not a copy.
+Paste the links of reels you love. Claude ranks them, breaks down how the best one works frame by frame, swaps their look for yours, writes your storyboard, then builds and renders the video in code. Borrow the moves, never the reel.
 
 | Skill | Job | Output |
 |---|---|---|
@@ -40,7 +40,7 @@ My reel is about <your topic>. Call to action: comment <KEYWORD>.
 
 Claude stops twice for your go: once on the script and storyboard, once on the key frames before it animates. You can also run one agent on its own, for example "break down this reel: <link>".
 
-## Inspired, not a copy
+## Borrow the moves, never the reel
 
 The remix keeps the structure, pacing and devices of the reels you pick, and rebuilds everything else with your own words, face, look, voice and music. No line of their script, frame of their footage or piece of their audio ends up in yours. The rules are in [`reference/not-a-copy.md`](reference/not-a-copy.md).
 

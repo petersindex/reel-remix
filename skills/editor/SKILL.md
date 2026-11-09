@@ -12,7 +12,8 @@ Builds the approved `STORYBOARD.md` cut for cut, in code, with HyperFrames (HTML
 1. **Scaffold.** In `remix/<slug>/`: `npx hyperframes init video --resolution portrait --non-interactive`. Init also installs the HyperFrames skills. Load the `hyperframes` skill before writing any HTML; if it is not listed in this session yet, read `~/.claude/skills/hyperframes/SKILL.md` and follow it.
 2. **Bring the brand in.** Copy every file named in `remix/brand.md` (fonts, logo, host footage or cut-outs, character art) into `video/assets/`. Set the palette and fonts from `brand.md` and `TICKET.md`; nothing from the reference's look survives.
 3. **Voice first, it is the clock.**
-   - The person's own recording: put it at `video/assets/vo.wav` (any format FFmpeg reads).
+   - Face-cam host: the footage carries the voice. Copy it to `video/assets/host.mp4` and transcribe that file instead of a `vo.wav`. To stand the person on the brand ground instead of their room, cut them out: `npx hyperframes remove-background video/assets/host.mp4 -o video/assets/host-cutout.webm`, and play the cut-out muted over a separate `<audio>` of the original.
+   - The person's own voice memo: put it at `video/assets/vo.wav` (any format FFmpeg reads).
    - TTS: write the script to `video/assets/script.txt`, then `npx hyperframes tts video/assets/script.txt -v <voice> -o video/assets/vo.wav` (`npx hyperframes tts --list` shows the voices).
 
    Then `npx hyperframes transcribe video/assets/vo.wav --dir video --json` for every word's time, and retime each shot so its chip lands on the word that says it.

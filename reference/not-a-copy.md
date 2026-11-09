@@ -1,4 +1,4 @@
-# Inspired by them, not a copy
+# Borrow the moves, never the reel
 
 A remix takes the **mechanics** of a reel and rebuilds them with the person's own material. These rules protect the person and the creators they learned from.
 

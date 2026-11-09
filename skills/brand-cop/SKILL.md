@@ -13,7 +13,7 @@ If `remix/brand.md` exists, read it, show a three-line summary, and ask only whe
 
 1. Look before asking. Check the working directory for a logo, brand guide, fonts, or a website URL the person mentioned; pull hex values and fonts from those, and say where each came from.
 2. Ask for what is still empty, a few fields per message, offering a concrete recommendation each time ("Your logo's blue is #1F4FD8; use it as the accent?"). For colours with no source, propose a palette from one physical scene that suits their niche (a gym's chalk, rubber and steel) instead of an abstract mood.
-3. **Host files** decide what the Editor can build, so pin them to real files: a face-cam clip, a transparent cut-out, character art. With none yet, the remix is built from kinetic type and screen recordings, and the sheet says so.
+3. **Host files** decide what the Editor can build, so pin them to real files: a face-cam clip, a transparent cut-out, character art. A person filming themselves needs nothing made: after the Director's script is approved, they record it as a phone selfie (vertical, eyes at the top third, window light in front of them), and that clip is both the host and the voice. With no host at all, the remix is built from kinetic type and screen recordings, and the sheet says so.
 
 Done when every field in the template has a value or an explicit "none", and every file path in it exists.
 
