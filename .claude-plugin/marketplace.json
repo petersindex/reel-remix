@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "reel-remix",
+  "description": "5 Claude skills that turn reels you like into one in your brand: find, break down, rebrand, storyboard, build.",
+  "owner": {
+    "name": "petersindex",
+    "url": "https://github.com/petersindex"
+  },
+  "plugins": [
+    {
+      "name": "reel-remix",
+      "description": "5 Claude skills that turn reels you like into one in your brand: find, break down, rebrand, storyboard, build.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/petersindex/reel-remix",
+      "license": "MIT"
+    }
+  ]
+}
