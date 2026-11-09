@@ -19,7 +19,7 @@ Builds the approved `STORYBOARD.md` cut for cut, in code, with HyperFrames (HTML
    Then `npx hyperframes transcribe video/assets/vo.wav --dir video --json` for every word's time, and retime each shot so its chip lands on the word that says it.
 4. **Pose stills (gate two).** Pose each storyboard shot at its key moment and put them on a board for approval, following the storyboard recipe in the `hyperframes` skill. Stop and wait for the person's go. Notes change only the frames they name.
 5. **Animate.** Build the motion from the Detective's notes (entrances, swaps, punch-ins, with their frame counts) and the On screen column. A character acts with what exists: hops, squash and stretch, turning, carrying and moving props. New poses need new art; list any that are missing instead of faking them.
-6. **Check.** `npx hyperframes check video --json`: fix every error, and weigh every warning. Then `npx hyperframes snapshot video --review` and compare each beat with its row in `STORYBOARD.md`: right chip, right picture, right host, text inside the 168 to 1330 px band. Fix and re-snapshot until every row matches.
+6. **Check.** `npx hyperframes check video --json`: fix every error, and weigh every warning. Then `npx hyperframes snapshot video --review` and compare each beat with its row in `STORYBOARD.md`: right chip, right picture, right host, and everything that must be seen inside the clear area in `../../reference/safe-zones.md`. Fix and re-snapshot until every row matches.
 7. **Render.** `npx hyperframes render video --quality delivery --output <slug>.mp4`.
 8. **Verify the file.**
    - `npx hyperframes measure cuts <slug>.mp4`: compare cuts per minute and shot lengths with the reference's `cuts.json`.

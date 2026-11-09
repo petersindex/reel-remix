@@ -29,4 +29,4 @@ Real before posting: (links, automations, anything the CTA promises)
 - [ ] Every chip has a literal picture
 - [ ] No six-word run shared with any reference transcript
 - [ ] Every read line holds at least 0.5 s plus 0.3 s a word
-- [ ] All text inside the 168 to 1330 px band
+- [ ] Every word, face and card inside the clear area (`../../reference/safe-zones.md`)
