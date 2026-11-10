@@ -29,4 +29,4 @@ Real before posting: (links, automations, anything the CTA promises)
 - [ ] Every chip has a literal picture
 - [ ] No six-word run shared with any reference transcript
 - [ ] Every read line holds at least 0.5 s plus 0.3 s a word
-- [ ] Every word inside the Reels clear area (x 65 to 1015, y 270 to 1250), and the picture filling the whole frame
+- [ ] Every word inside the safe layout (headline x 110 to 970, y 240 to 390; below y 1000 keep x under 880; nothing readable below 1600), the picture filling the whole frame, and at least 40 px between blocks
