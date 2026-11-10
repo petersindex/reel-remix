@@ -4,6 +4,10 @@
 
 Paste the links of reels you love. Claude ranks them, breaks down how the best one works frame by frame, swaps their look for yours, writes your storyboard, then builds and renders the video in code. Borrow the moves, never the reel.
 
+<p align="center"><img src="examples/petersindex/preview.gif" width="300" alt="A clip from the Reel Remix launch reel: five voxel Clawds pop out, one per agent"/></p>
+
+**Made with it:** the launch reel for this pack. [Watch the full reel](examples/petersindex/reel-remix.mp4), and see the [brand sheet](examples/petersindex/brand.md) and [storyboard](examples/petersindex/STORYBOARD.md) it was built from.
+
 | Skill | Job | Output |
 |---|---|---|
 | **High Roller** | Find: ranks reels by how hard they pull comments | `RANK.md` |
@@ -46,7 +50,9 @@ The remix keeps the structure, pacing and devices of the reels you pick, and reb
 
 ## Status
 
-v0.1. Built on macOS. The find and break-down steps are tested on real Instagram reels. Instagram does not expose view counts this way, so ranking uses comments, likes and post date. A private or rate-limited reel may need your browser's Instagram session (the skill asks first).
+v0.2. Built and tested on macOS. All five steps have been run end to end by a fresh Claude Code session using only this plugin: it ranked two real Instagram reels, broke down the winner, built a brand sheet, wrote the storyboard and rendered a finished 60-second reel. The launch reel above was built by hand with the same tools and steps the skills use. Every issue those runs hit has been addressed in this version.
+
+Instagram does not expose view counts this way, so ranking uses comments, likes and post date. A private or rate-limited reel may need your browser's Instagram session (the skill asks first). Layouts follow safe zones measured from an iPhone; other phones crop slightly differently, so play your reel once before posting.
 
 ## Built on
 

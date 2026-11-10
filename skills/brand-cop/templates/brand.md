@@ -13,8 +13,8 @@ What I want people to do (follow, comment, buy, book):
 | Extra (optional) | | |
 
 ## Type
-Display font: (name, weight; file path if it is not a Google Font)
-Body or caption font:
+Display font: (name and weight; a Google Font name, or the path to the font file)
+Body or caption font: (same: Google Font name or file path)
 Accent style (optional, e.g. one italic word):
 
 ## On screen
